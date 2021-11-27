@@ -1,0 +1,51 @@
+{
+  "button:roll":{
+    "prefix":"btn:r",
+    "body": "button(type=\"roll\" name=\"roll_$1\" title=\"%{$1}\" value=\"$2\")"
+  },
+  "button:action":{
+    "prefix":"btn:a",
+    "body": "button(type=\"action\" name=\"act_$1\" title=\"@{$1}\" value=\"$2\")"
+  },
+  "input:number":{
+    "prefix": "in:n",
+    "body": "input(type=\"number\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\")"
+  },
+  "input:text":{
+    "prefix": "in:t",
+    "body": "input(type=\"text\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\")"
+  },
+  "input:hidden":{
+    "prefix": "in:h",
+    "body": "input(type=\"hidden\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\")"
+  },
+  "input:radio":{
+    "prefix": "in:r",
+    "body": "input(type=\"radio\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\")"
+  },
+  "input:checkbox":{
+    "prefix": "in:c",
+    "body": "input(type=\"checkbox\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\")"
+  },
+  "textarea":{
+    "prefix": "txt",
+    "body": "textarea(name=\"attr_$1\" title=\"@{$1}\" value=\"$2\")"
+  },
+  "select":{
+    "prefix": "sel",
+    "body": "select(name=\"attr_$1\" title=\"@{$1}\")"
+  },
+  "option":{
+    "prefix": "opt",
+    "body": "option(value=\"$1\")"
+  },
+  "rolltemplate":{
+    "prefix": "roll",
+    "body": "rolltemplate.sheet-rolltemplate-$1"
+  },
+  "repeating section": {
+    "prefix": "rep",
+    "body": "fieldset.repeating_$1",
+    "description":"blabla https://wiki.roll20.net/Repeating_Sections"
+  }
+}

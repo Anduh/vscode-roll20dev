@@ -1,0 +1,6 @@
+{
+  ".sheet-rolltemplate":{
+    "prefix":".s",
+    "body": ".sheet-rolltemplate-$1 {\n\t$2\n}"
+  }
+}

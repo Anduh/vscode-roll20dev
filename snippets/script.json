@@ -1,0 +1,7 @@
+{
+  "sheetworker element for Roll20": {
+    "prefix": "sheetworker",
+    "body": "script(type=\"text/worker\")",
+    "description": "script sheetworker"
+  }
+}

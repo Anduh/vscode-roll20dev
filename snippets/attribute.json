@@ -1,0 +1,57 @@
+{
+    "class": {
+        "prefix": "class",
+        "body": "class=\"$1\"$0",
+        "description": "Set class attribute"
+    },
+    "id": {
+        "prefix": "id",
+        "body": "id=\"$1\"$0",
+        "description": "Set id attribute"
+    },
+    "data-i18n": {
+        "prefix": "i18n",
+        "body": "data-i18n-$1=\"$2\"$0",
+        "description": "Set data-i18n attribute"
+    },
+    "data-i18n": {
+      "prefix": "data",
+      "body": "data-i18n-$1=\"$2\"$0",
+      "description": "Set data-i18n attribute"
+  },
+    "aria": {
+        "prefix": "aria",
+        "body": "aria-$1=\"$2\"$0",
+        "description": "Set aria attribute"
+    },
+    "type": {
+        "prefix": "type",
+        "body": "type=\"$1\"$0",
+        "description": "Set type attribute for form elements"
+    },
+    "title": {
+        "prefix": "title",
+        "body": "title=\"$1\"$0",
+        "description": "Set title attribute for form elements"
+    },
+    "name:attr": {
+        "prefix": "name",
+        "body": "name=\"attr_$1\"$0",
+        "description": "Set name attribute for form elements"
+    },
+    "name:roll": {
+      "prefix": "name:r",
+      "body": "name=\"roll_$1\"$0",
+      "description": "Set name attribute for form elements"
+  },
+    "placeholder": {
+        "prefix": "placeholder",
+        "body": "placeholder=\"$1\"$0",
+        "description": "Set placeholder attribute for form elements"
+    },
+    "value": {
+        "prefix": "val",
+        "body": "value=\"$1\"$0",
+        "description": "Set value attribute for form elements"
+    }
+}

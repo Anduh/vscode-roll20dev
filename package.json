@@ -1,0 +1,87 @@
+{
+    "name": "roll20sheetdev",
+    "displayName": "Roll20 Sheet Dev",
+    "description": "Tools for creating Roll20 Character Sheets.",
+    "version": "0.1.0",
+    "publisher": "anduh",
+    "icon": "images/Roll20.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/anduh/vscode-roll20dev"
+    },
+    "bugs": {
+        "type": "git",
+        "url": "https://github.com/anduh/vscode-roll20dev/issues"
+    },
+    "license": "MIT",
+    "preview": true,
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Language Packs",
+        "Visualization",
+        "Other"
+    ],
+    "keywords": [
+        "Roll20",
+        "TTRPG",
+        "RPG",
+        "syntax highlight"
+    ],
+    "contributes": {
+      "html": {
+        "customData": [
+          "./src/html/html.html-data.json",
+          "./src/html/htmlGlobalAttributes.json"
+        ]
+      },
+      "snippets": [
+        {
+          "language": "jade",
+          "path": "./snippets/attribute.json"
+        },
+        {
+          "language": "jade",
+          "path": "./snippets/elements.json"
+        },
+        {
+          "language": "jade",
+          "path": "./snippets/script.json"
+        },
+        {
+          "language": "jade",
+          "path": "./snippets/style.json"
+        },
+        {
+          "language": "jade",
+          "path": "./snippets/syntax.json"
+        },
+        {
+          "language": "css",
+          "path": "./snippets/css.json"
+        }
+      ]
+    },
+    "activationEvents": [
+      "onLanguage:jade"
+    ],
+    "main": "./out/extension.js",
+    "scripts": {
+      "vscode:prepublish": "npm run compile",
+      "compile": "tsc -p ./",
+      "lint": "eslint . --ext .ts,.tsx",
+      "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+      "@types/node": "^12.12.0",
+      "@types/vscode": "^1.32.0",
+      "@typescript-eslint/eslint-plugin": "^4.16.0",
+      "@typescript-eslint/parser": "^4.16.0",
+      "eslint": "^7.21.0",
+      "typescript": "^4.4.3",
+      "webpack": "^5.64.2",
+      "webpack-cli": "^4.9.1"
+    }
+}
