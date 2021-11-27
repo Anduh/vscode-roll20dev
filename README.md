@@ -31,7 +31,7 @@ Tools for [Roll20](https://roll20.net/), to help with [Character Sheet Developme
 
 ### Example
 
-<img src="https://raw.githubusercontent.com/Anduh/rmacro/main/images/pug-ex1.gif">
+<img src="https://raw.githubusercontent.com/Anduh/vscode-roll20dev/main/images/pug-ex1.gif">
 
 ## Related
 

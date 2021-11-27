@@ -1,5 +1,7 @@
 ## Changelog
 
+### 0.1.1
+- fix readme img
 
 ### 0.1.0
 
