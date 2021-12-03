@@ -1,0 +1,63 @@
+{
+  "button:roll":{
+    "prefix":"btn:r",
+    "body": "<button type=\"roll\" name=\"roll_$1\" title=\"%{$1}\" value=\"$2\">$3</button>"
+  },
+  "button:action":{
+    "prefix":"btn:a",
+    "body": "<button type=\"action\" name=\"act_$1\" title=\"%{$1}\" value=\"$2\">$3</button>"
+  },
+  "input:number":{
+    "prefix": "in:n",
+    "body": "<input type=\"number\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">"
+  },
+  "input:text":{
+    "prefix": "in:t",
+    "body": "<input type=\"text\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">"
+  },
+  "input:hidden":{
+    "prefix": "in:h",
+    "body": "<input type=\"hidden\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">"
+  },
+  "input:radio":{
+    "prefix": "in:r",
+    "body": "<input type=\"radio\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">"
+  },
+  "input:checkbox":{
+    "prefix": "in:c",
+    "body": "<input type=\"checkbox\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">"
+  },
+  "textarea":{
+    "prefix": "txt",
+    "body": "<textarea name=\"attr_$1\" title=\"@{$1}\" value=\"$2\"><textarea>"
+  },
+  "select":{
+    "prefix": "sel",
+    "body": "< select name=\"attr_$1\" title=\"@{$1}\">$2</select>"
+  },
+  "option":{
+    "prefix": "opt",
+    "body": "<option value=\"$1\">$2</option>"
+  },
+  "rolltemplate":{
+    "prefix": "roll",
+    "body": "<rolltemplate class=\"sheet-rolltemplate-$1\">$2</rolltemplate>"
+  },
+  "repeating section": {
+    "prefix": "repeating section",
+    "body": "<fieldset class=\"repeating_$1\">$2</fieldset>",
+    "description":"Info: https://wiki.roll20.net/Repeating_Sections"
+  },
+  "avatar": {
+    "prefix": "character avatar",
+    "body": "<img name=\"attr_character_avatar\">"    
+  },
+  "token": {
+    "prefix": "character token",
+    "body": "<img name=\"attr_character_token\">"    
+  },
+  "Roll20 Sheetworker":{
+    "prefix":"script:text/worker",
+    "body":"<script type=\"text/worker\">$1</script>"
+  }
+}

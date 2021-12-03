@@ -2,43 +2,142 @@
   "version": 1.1,
   "tags": [{
     "name": "rolltemplate",
-    "description": "Roll Template",
+    "description": "Roll Templates are a special facet of the Roll20 [Character Sheet](https://wiki.roll20.net/Building_Character_Sheets) system which provide additional layout and styling options for the display of roll results.",
     "references": [
       {
-        "name": "Roll Templates",
+        "name": "Roll Template - Roll20 Community Wiki",
         "url": "https://wiki.roll20.net/Building_Character_Sheets/Roll_Templates"
       }
-    ]
+    ],
+    "attributes": [{
+      "name": "class",
+      "description": "Rolltemplates must have a class-name using this format",
+      "values": [{
+        "name": "sheet-rolltemplate-"
+      }]
+    }]
   },
   {
     "name": "charmancer",
-    "description": "Charactermancer",
+    "description": "Charactermancer is subsystem of the Roll20 character sheets, that enables the creation of a step-by-step character creation & levelup system for users, by means of pulling data from a compatible [Compendium](https://wiki.roll20.net/Compendium).\n\nCreating a Charactermancer is a *massive* undertaking.",
     "references": [
       {
-        "name": "Charactermancer",
+        "name": "Charactermancer Creation - Roll20 Community Wiki",
         "url": "https://wiki.roll20.net/Charactermancer_Development_Documentation"
       }
     ]
   },
   {
     "name": "button",
-    "description": "roll20 buttons",
     "attributes": [{
       "name": "type",
-      "description": "roll20 button types",
+      "description": "Roll20 Roll Buttons",
       "values": [
-        { "name": "roll" },
-        { "name": "action" }
+        { 
+          "name": "roll",
+          "description": "Roll20 Roll Button\n\nThe Common method for creating rolls.\n\nExample:\n\n`<button type=\"roll\" value=\"/roll 1d20 + @{Bluff}\" name=\"roll_BluffCheck\">Roll Bluff</button>`\n\nSee Also **[Custom Roll Parsing](https://wiki.roll20.net/CRP)**, which uses `type=\"action\"`\n\nBy default, roll buttons show a d20 icon, and if any text is added to be displayed on the button, it is shown after the d20 icon",
+          "references": [
+            {
+              "name": "Roll Button - Roll20 Community Wiki",
+              "url": "https://wiki.roll20.net/Button#Roll_Button"
+            }
+          ]
+        },
+        { 
+          "name": "action",
+          "description": "Roll20 Action buttons\n\nAction buttons can be used as events to trigger [Sheetworkers](https://wiki.roll20.net/Sheetworkers).\n\n **[Custom Roll Parsing](https://wiki.roll20.net/CRP)**, see [Roll Parsing](https://wiki.roll20.net/Button#Roll_Parsing)",
+          "references": [
+            {
+              "name": "Action Button - Roll20 Community Wiki",
+              "url": "https://wiki.roll20.net/Button#Action_Button"
+            }
+          ]
+        }
       ]
     }]
   },
   {
     "name": "input",
+    "attributes": [
+      {
+        "name": "type",
+        "description": "input types usable in Roll20:\n\n`type=\"text\"`\n\n`type=\"number\"`\n\n`type=\"checkbox\"`\n\n`type=\"radio\"`\n\n`type=\"hidden\"`\n\n`type=\"text\"`",
+        "references": [
+          {
+            "name": "Storing Character Data - Roll20 Community Wiki",
+            "url": "https://wiki.roll20.net/Building_Character_Sheets#Storing_User_Data"
+          }
+        ],
+        "values": [
+          { "name": "hidden",
+            "description": "In Roll20, `type=hidden` is used for storing sheet attributes that aren't meant to be seen by the user.\n\nThis is usually for secondary attributes used in calcualtions & [Sheetworkers](https://wiki.roll20.net/Sheetworkers).",
+            "references": [
+              {
+                "name": "Hidden input - Roll20 Community Wiki",
+                "url": "https://wiki.roll20.net/BCS#type.3D.22hidden.22"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "name",
+        "values": [
+          { "name": "attr_character_name",
+            "description": "Display(and able to edit) the name defined for the character which shows up on the Journal-tab.\n\n`<input type=\"text\" name=\"attr_character_name\"> `",
+            "references": [
+              {
+                "name": "Pseudoattributes - Roll20 Community Wiki",
+                "url": "https://wiki.roll20.net/BCS/Pseudo-attributes#character_name"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "img",
+    "attributes": [
+      {
+        "name": "name",
+        "values": [
+          { "name": "attr_character_token",
+            "description": "Displays the character's Token image on the Char sheet.\n\n`<img name=\"attr_character_token\"> `",
+            "references": [
+              {
+                "name": "Pseudoattributes - Roll20 Community Wiki",
+                "url": "https://wiki.roll20.net/BCS/Pseudo-attributes#character_token"
+              }
+            ]
+          },
+          { "name": "attr_character_avatar",
+            "description": "Displays the character's Avatar image on the Char Sheet.\n\n`<img name=\"attr_character_avatar\"> `",
+            "references": [
+              {
+                "name": "Pseudoattributes - Roll20 Community Wiki",
+                "url": "https://wiki.roll20.net/BCS/Pseudo-attributes#character_avatar"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "script",
     "attributes": [{
       "name": "type",
-      "description": "roll20 inputs types",
       "values": [
-        { "name": "hidden" }
+        { "name": "text/worker",
+          "description": "Roll20 Sheet Workers\n\n`<script type=\"text/worker\"></script>` is used for storing the limited javascript which can be used in Roll20 Sheets.\n\nThey will allow making automatic & complex changes to the character sheet stats, based on certain events; such as whenever a certain attribute's value on a character sheet is modified, or when an [action button](https://wiki.roll20.net/Button#Action_Button) is pressed.\n\nThe recommendation is to use a single `<script>`-element per sheet.",
+          "references": [
+            {
+              "name": "Sheetworkers - Roll20 Community Wiki",
+              "url": "https://wiki.roll20.net/Sheetworkers"
+            }
+          ] 
+        }
       ]
     }]
   },
@@ -46,7 +145,17 @@
     "name": "span",
     "attributes": [{
       "name": "name",
-      "description": "to display attribute, instead of using a disabled input"
+      "description": "In Roll20, you can use a span to display an attribute, instead of using a disabled input."
+    }]
+  },
+  {
+    "name": "fieldset",
+    "attributes": [{
+      "name":"class",
+      "description": "In Roll20 [Repeating Sections](https://wiki.roll20.net/Repeating_Sections), the `<fieldset>` must have a classname following this format.",
+      "values": [{
+        "name": "repeating_"
+      }]
     }]
   }]
 }

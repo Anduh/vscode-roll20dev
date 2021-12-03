@@ -1,62 +1,110 @@
-[
-  {
-    "name": "data-i18n",
-    "description": "Roll20 translation attribute",
-    "references": [
-      {
-        "name": "Roll20 Translations - BCS",
-        "url": "https://wiki.roll20.net/i18n"
-      }
-    ]
-  },
-  {
-    "name": "data-i18n-placeholder",
-    "description": "Roll20 translation attribute",
-    "references": [
-      {
-        "name": "Roll20 Translations - BCS",
-        "url": "https://wiki.roll20.net/i18n"
-      }
-    ]
-  },
-  {
-    "name": "data-i18n-vars",
-    "description": "Roll20 translation attribute",
-    "references": [
-      {
-        "name": "Roll20 Translations - BCS",
-        "url": "https://wiki.roll20.net/i18n"
-      }
-    ]
-  },
-  {
-    "name": "data-i18n-title",
-    "description": "Roll20 translation attribute",
-    "references": [
-      {
-        "name": "Roll20 Translations - BCS",
-        "url": "https://wiki.roll20.net/i18n"
-      }
-    ]
-  },
-  {
-    "name": "data-i18n-dynamic",
-    "description": "Roll20 translation attribute",
-    "references": [
-      {
-        "name": "Roll20 Translations - BCS",
-        "url": "https://wiki.roll20.net/i18n"
-      }
-    ]
-  },
-  {
-    "name": "data-i18n-list",
-    "description": "Roll20 translation attribute",
-    "references": [
-      {
-        "name": "Roll20 Translations - BCS",
-        "url": "https://wiki.roll20.net/i18n"
-      }
-    ]
-  }
-]
+{
+  "version": 1.1,
+  "globalAttributes": [
+    {
+      "name": "data-i18n",
+      "description": "Roll20 translation attribute",
+      "references": [
+        {
+          "name": "Translations - Roll20 Community Wiki",
+          "url": "https://wiki.roll20.net/i18n#Standard_Text"
+        }
+      ]
+    },
+    {
+      "name": "data-i18n-placeholder",
+      "description": "Roll20 translation attribute",
+      "references": [
+        {
+          "name": "Translations - Roll20 Community Wiki",
+          "url": "https://wiki.roll20.net/i18n#Element_Attribute_Text"
+        }
+      ]
+    },
+    {
+      "name": "data-i18n-vars",
+      "description": "Roll20 translation attribute",
+      "references": [
+        {
+          "name": "Translations - Roll20 Community Wiki",
+          "url": "https://wiki.roll20.net/i18n#Variable_Replacement"
+        }
+      ]
+    },
+    {
+      "name": "data-i18n-title",
+      "description": "Roll20 translation attribute",
+      "references": [
+        {
+          "name": "Translations - Roll20 Community Wiki",
+          "url": "https://wiki.roll20.net/i18n#Element_Attribute_Text"
+        }
+      ]
+    },
+    {
+      "name": "data-i18n-dynamic",
+      "description": "Roll20 translation attribute",
+      "references": [
+        {
+          "name": "Translations - Roll20 Community Wiki",
+          "url": "https://wiki.roll20.net/i18n#Dynamic_Key_Replacement"
+        }
+      ]
+    },
+    {
+      "name": "data-i18n-list",
+      "description": "Roll20 translation attribute\n\nIf you have a list of items in a container, that in English is alphabetically ordered, and you want to be able to change the order in other languages you can use this tool. The re-ordering will respect all current formatting in the list, so even if your list spans several sub-containers, everything should remain formatted the same way.",
+      "references": [
+        {
+          "name": "Translations - Roll20 Community Wiki",
+          "url": "https://wiki.roll20.net/i18n#List_Ordering"
+        }
+      ]
+    },
+    { "name": "xattr", "description": "X attributes", "valueSet": "x" }
+  ],
+  "valueSets": [
+    {
+      "name": "x",
+      "values": [
+        {
+          "name": "xval",
+          "description": "z value"
+        },
+        {
+          "name": "yval",
+          "description": "y value"
+        },
+        {
+          "name": "zval",
+          "description": "z value"
+        }
+      ]
+    },
+    {
+      "name": "buttons",
+      "values": [
+        { 
+          "name": "roll",
+          "description": "Roll20 Roll Button\n\nThe Common method for creating rolls.\n\nExample:\n\n`<button type=\"roll\" value=\"/roll 1d20 + @{Bluff}\" name=\"roll_BluffCheck\">Roll Bluff</button>`\n\nSee Also **[Custom Roll Parsing](https://wiki.roll20.net/CRP)**, which uses `type=\"action\"`\n\nBy default, roll buttons show a d20 icon, and if any text is added to be displayed on the button, it is shown after the d20 icon",
+          "references": [
+            {
+              "name": "Roll Button - Roll20 Community Wiki",
+              "url": "https://wiki.roll20.net/Button#Roll_Button"
+            }
+          ]
+        },
+        { 
+          "name": "action",
+          "description": "Roll20 Action buttons\n\nAction buttons can be used as events to trigger [Sheetworkers](https://wiki.roll20.net/Sheetworkers).\n\n **[Custom Roll Parsing](https://wiki.roll20.net/CRP)**, see [Roll Parsing](https://wiki.roll20.net/Button#Roll_Parsing)",
+          "references": [
+            {
+              "name": "Action Button - Roll20 Community Wiki",
+              "url": "https://wiki.roll20.net/Button#Action_Button"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

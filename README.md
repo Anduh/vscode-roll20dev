@@ -9,30 +9,52 @@
 Tools for [Roll20](https://roll20.net/), to help with [Character Sheet Development](https://wiki.roll20.net/Building_Character_Sheets).
 
 
+- [Roll20 Sheet Dev](#roll20-sheet-dev)
+  - [Features](#features)
+    - [HTML](#html)
+    - [JS](#js)
+    - [PUG](#pug)
+    - [CSS/SCSS](#cssscss)
+  - [Examples](#examples)
+  - [Contribute](#contribute)
+- [Related Extensions](#related-extensions)
+
 ## Features
 
 
-**HTML**
-
+### HTML
 - recognize, autocompletes, and on hover, shows documentation + links
   - elements: `<rolltemplate>` and `<charmancer>`
   - global attributes: `data-i18n`and it's variants
   - recognize: button `type="roll"`, `type="action"`; input `type="hidden"` as options
+- snippets: common roll20 elements & fills out with relevant attributes
 
-**pug**
+### JS
+- `<script type="text/worker">`-blocks in `.html`-files now shows js highlight properly
+
+### PUG
 
 - snippets: common roll20 elements & fills out with relevant attributes
   - e.g. inputs always have `name="attr_"`, buttons recognize `type="roll"` & `"action"`
 - autocomplete & documentation links: partial
 
-**css** / **scss**
-
+### CSS/SCSS
 - couple of snippets
 
-### Example
+## Examples
 
+Pug-snippet expanded
 <img src="https://raw.githubusercontent.com/Anduh/vscode-roll20dev/main/images/pug-ex1.gif">
 
-## Related
+## Contribute
+repo: [Anduh/vscode-roll20sheetdev](https://github.com/Anduh/vscode-roll20sheetdev)
+
+You can help even without knowing how VS Code extensions work. Here are a few concrete parts to start from: 
+
+* add more html/pug/css/js [Snippets](https://github.com/anduh/vscode-roll20dev/tree/main/snippets): if you look at the [existing snippets](https://github.com/anduh/vscode-roll20dev/tree/main/snippets) for the plugin, you can follow the same patterns and expand the collection of snippets easily.
+  * About:[VS Code Snippet Syntax](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-syntax)
+
+
+# Related Extensions
 
 [Roll20 Macros](https://marketplace.visualstudio.com/items?itemName=anduh.rmacro) is a related extension, which provides syntax highlight for Roll20's [macro & dice syntax](https://wiki.roll20.net/Macro_Guide).

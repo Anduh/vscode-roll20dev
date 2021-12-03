@@ -2,7 +2,7 @@
     "name": "roll20sheetdev",
     "displayName": "Roll20 Sheet Dev",
     "description": "Tools for creating Roll20 Character Sheets.",
-    "version": "0.1.1",
+    "version": "0.3.0",
     "publisher": "anduh",
     "icon": "images/Roll20.png",
     "repository": {
@@ -39,30 +39,82 @@
       },
       "snippets": [
         {
-          "language": "jade",
-          "path": "./snippets/attribute.json"
+          "language": "html",
+          "path": "./snippets/html/attribute.json"
+        },
+        {
+          "language": "html",
+          "path": "./snippets/html/elements.json"
         },
         {
           "language": "jade",
-          "path": "./snippets/elements.json"
+          "path": "./snippets/pug/attribute.json"
         },
         {
           "language": "jade",
-          "path": "./snippets/script.json"
+          "path": "./snippets/pug/elements.json"
         },
         {
           "language": "jade",
-          "path": "./snippets/style.json"
+          "path": "./snippets/pug/script.json"
         },
         {
           "language": "jade",
-          "path": "./snippets/syntax.json"
+          "path": "./snippets/pug/syntax.json"
         },
         {
           "language": "css",
           "path": "./snippets/css.json"
         }
+      ],
+      "grammars": [
+        {
+          "scopeName": "sheetworker.js",
+          "injectTo": [
+            "source.html",
+            "text.html",
+            "text.pug"
+          ],
+          "path": "./syntaxes/sheetworker-js.json",
+          "embeddedLanguages": {
+            "meta.embedded.block.js": "js"
+          }
+        },
+        {
+          "scopeName": "rolltemplate.handlebars",
+          "injectTo": [
+            "source.html",
+            "text.html",
+            "text.pug"
+          ],
+          "path": "./syntaxes/rolltemplate-handlebars.json",
+          "embeddedLanguages": {
+            "meta.embedded.block.handlebars": "handlebars"
+          }
+        }
+      ],
+      "languages": [
+        {
+          "id": "handlebars",
+          "extensions": [
+            ".rtemplate",
+            ".rolltemplate"
+          ]
+        },
+        {
+          "id": "javascript",
+          "mimetypes": [
+            "text/worker"
+          ]
+        }
       ]
+    },
+    "configurationDefaults": {
+      "emmet.extensionsPath": [
+        "./snippets/html"
+      ],
+      "emmet.showSuggestionsAsSnippets": false,
+      "editor.snippetSuggestions": "top"
     },
     "activationEvents": [
       "onLanguage:jade"
