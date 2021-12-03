@@ -1,0 +1,32 @@
+{
+  "data-i18n": {
+    "prefix": "i18n",
+    "body": "data-i18n=\"$1\"$0",
+    "description": "Set data-i18n attribute"
+  },
+  "data-i18n-title": {
+    "prefix": "i18n-title",
+    "body": "data-i18n-title=\"$1\"$0",
+    "description": "Set data-i18n-title attribute"
+  },
+  "data-i18n-placeholder": {
+    "prefix": "i18n-placeholder",
+    "body": "data-i18n-placeholder=\"$1\"$0",
+    "description": "Set data-i18n-placeholder attribute"
+  },
+  "name:attr": {
+      "prefix": "name",
+      "body": "name=\"attr_$1\"$0",
+      "description": "Set name attribute for sheet attr"
+  },
+  "name:roll": {
+    "prefix": "name:r",
+    "body": "name=\"roll_$1\"$0",
+    "description": "Set name attribute for roll button"
+  },
+  "name:act": {
+    "prefix": "name:act",
+    "body": "name=\"act_$1\"$0",
+    "description": "Set name attribute for action button"
+  }
+}

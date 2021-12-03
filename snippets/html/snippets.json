@@ -1,0 +1,88 @@
+{
+  "html":{
+    "button:roll":{
+      "prefix":"btn:r",
+      "body": "<button type=\"roll\" name=\"roll_$1\" title=\"%{$1}\" value=\"$2\">$3</button>$0"
+    },
+    "button:action":{
+      "prefix":"btn:a",
+      "body": "<button type=\"action\" name=\"act_$1\" title=\"%{$1}\" value=\"$2\">$3</button>$0"
+    },
+    "input:number":{
+      "prefix": "i:n",
+      "body": "<input type=\"number\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">$0"
+    },
+    "input:text":{
+      "prefix": "i:t",
+      "body": "<input type=\"text\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">$0"
+    },
+    "input:hidden":{
+      "prefix": "in:h",
+      "body": "<input type=\"hidden\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">$0"
+    },
+    "input:radio":{
+      "prefix": "in:r",
+      "body": "<input type=\"radio\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">$0"
+    },
+    "input:checkbox":{
+      "prefix": "in:c",
+      "body": "<input type=\"checkbox\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\">$0"
+    },
+    "textarea":{
+      "prefix": "txt",
+      "body": "<textarea name=\"attr_$1\" title=\"@{$1}\" value=\"$2\"><textarea>$0"
+    },
+    "select":{
+      "prefix": "sel",
+      "body": "< select name=\"attr_$1\" title=\"@{$1}\">$2</select>$0"
+    },
+    "option":{
+      "prefix": "opt",
+      "body": "<option value=\"$1\">$2</option>$0"
+    },
+    "rolltemplate":{
+      "prefix": "roll",
+      "body": "<rolltemplate class=\"sheet-rolltemplate-$1\">$2</rolltemplate>$0"
+    },
+    "repeating section": {
+      "prefix": "rep",
+      "body": "<fieldset class=\"repeating_$1\">$2</fieldset>$0",
+      "description":"Info: https://wiki.roll20.net/Repeating_Sections"
+    },
+    "class": {
+        "prefix": "class",
+        "body": "class=\"$1\"$0",
+        "description": "Set class attribute"
+    },
+    "data-i18n": {
+        "prefix": "i18n",
+        "body": "data-i18n=\"$1\"$0",
+        "description": "Set data-i18n attribute"
+    },
+    "data-i18n1": {
+      "prefix": "data",
+      "body": "data-i18n=\"$1\"$0",
+      "description": "Set data-i18n attribute"
+    },
+    "data-i18n-title": {
+      "prefix": "i18n-title",
+      "body": "data-i18n-title=\"$1\"$0",
+      "description": "Set data-i18n-title attribute"
+    },
+    "data-i18n-placeholder": {
+      "prefix": "i18n-placeholder",
+      "body": "data-i18n-placeholder=\"$1\"$0",
+      "description": "Set data-i18n-placeholder attribute"
+    },
+    "name:attr": {
+        "prefix": "name",
+        "body": "name=\"attr_$1\"$0",
+        "description": "Set name attribute for form elements"
+    },
+    "name:roll": {
+      "prefix": "name:r",
+      "body": "name=\"roll_$1\"$0",
+      "description": "Set name attribute for form elements"
+    }
+  }
+}

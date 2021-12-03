@@ -1,0 +1,30 @@
+{
+  "fileTypes": [
+    "html",
+    "pug"
+  ],
+  "scopeName": "rolltemplate.handlebars",
+  "injectionSelector": "L:text.html -comment, L:source.html -comment",
+	"patterns": [
+		{
+			"include": "#rolltemplate.handlebars"
+		}
+	],
+  "repository": {
+    "rolltemplate.handlebars":{
+        "begin": "(?<=<rolltemplate class=\"sheet-rolltemplate-.*[a-z0-9]\">)",
+        "beginCaptures": {
+          "1": {
+            "name": "comment.block"
+          }
+        },
+        "end": "(?=</rolltemplate>)",
+        "contentName": "meta.embedded.block.handlebars",
+        "patterns": [
+          {
+            "include": "text.html.handlebars"
+          }
+        ]
+    }
+  }
+}

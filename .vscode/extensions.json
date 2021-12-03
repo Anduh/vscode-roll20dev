@@ -4,6 +4,8 @@
 
 	// List of extensions which should be recommended for users of this workspace.
 	"recommendations": [
-		"anduh.rmacro"
+		"anduh.rmacro",
+    "AndersEAndersen.html-class-suggestions",
+    "christopherstyles.html-entities"
 	]
 }
