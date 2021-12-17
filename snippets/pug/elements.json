@@ -15,6 +15,10 @@
     "prefix": "in:t",
     "body": "input(type=\"text\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\")"
   },
+  "input:text+datalist":{
+    "prefix": "in:d",
+    "body": "input(type=\"text\" name=\"attr_$1\" title=\"@{$1}\" id=\"$2\" value=\"$3\")"
+  },
   "input:hidden":{
     "prefix": "in:h",
     "body": "input(type=\"hidden\" name=\"attr_$1\" title=\"@{$1}\" value=\"$2\")"
@@ -39,6 +43,10 @@
     "prefix": "opt",
     "body": "option(value=\"$1\")"
   },
+  "datalist":{
+    "prefix": "datalist",
+    "body": "datalist(id=\"$1\")"
+  },
   "rolltemplate":{
     "prefix": "roll",
     "body": "rolltemplate.sheet-rolltemplate-$1"
@@ -46,6 +54,10 @@
   "repeating section": {
     "prefix": "rep",
     "body": "fieldset.repeating_$1",
-    "description":"blabla https://wiki.roll20.net/Repeating_Sections"
+    "description":"Info: https://wiki.roll20.net/Repeating_Sections"
+  },
+  "Roll20 Sheetworker":{
+    "prefix":"script:text/worker",
+    "body":"script(type=\"text/worker\")"
   }
 }
