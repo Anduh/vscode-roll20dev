@@ -39,6 +39,14 @@
     "prefix": "opt",
     "body": "<option value=\"$1\">$2</option>"
   },
+  "datalist":{
+    "prefix": "datalist",
+    "body": "<datalist id=\"$1\">$2</datalist>"
+  },
+  "label":{
+    "prefix": "lbl",
+    "body": "<label>$1</label>"
+  },
   "rolltemplate":{
     "prefix": "roll",
     "body": "<rolltemplate class=\"sheet-rolltemplate-$1\">$2</rolltemplate>"
@@ -55,6 +63,10 @@
   "token": {
     "prefix": "character token",
     "body": "<img name=\"attr_character_token\">"    
+  },
+  "charactername": {
+    "prefix": "character name",
+    "body": "<input type=\"text\" name=\"attr_character_name\">"    
   },
   "Roll20 Sheetworker":{
     "prefix":"script:text/worker",

@@ -2,7 +2,7 @@
     "name": "roll20sheetdev",
     "displayName": "Roll20 Sheet Dev",
     "description": "Tools for creating Roll20 Character Sheets.",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "publisher": "anduh",
     "icon": "images/Roll20.png",
     "repository": {
