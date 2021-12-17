@@ -55,6 +55,9 @@ Any files named `.rolltemplate` or `.rtemplate` will show HTML & rolltemplate sy
 
 ## Examples
 
+Roll20 Sheet Development documentation, and rolltemplate/sheetworker syntax highlight:
+<img src="https://raw.githubusercontent.com/Anduh/vscode-roll20dev/v031/images/vscode-sheetdev-hover-swgcolors.gif">
+
 Pug-snippet expanded
 <img src="https://raw.githubusercontent.com/Anduh/vscode-roll20dev/main/images/pug-ex1.gif">
 
